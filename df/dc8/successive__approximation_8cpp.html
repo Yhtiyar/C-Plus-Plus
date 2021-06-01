@@ -199,7 +199,7 @@ Functions</h2></td></tr>
 <p>Main function </p>
 <div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;           {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> y, x1, x2, x3, <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a>, s, a, f1, f2, gd;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> i, n;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> i, <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; 10; i++) {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">sum</a> = <a class="code" href="../../df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389">eq</a>(y);</div>
@@ -209,9 +209,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;enter the x1-&gt;&quot;</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; x1;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;enter the no iteration to perform-&gt;\n&quot;</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt;= n; i++) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt;= <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>; i++) {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        x2 = <a class="code" href="../../df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456">eqd</a>(x1);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nenter the x2-&gt;&quot;</span> &lt;&lt; x2;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        x1 = x2;</div>
@@ -220,6 +220,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="anamespacemachine__learning_html_a5305cc18d11943d3dc0d66e70d7e9c44"><div class="ttname"><a href="../../d8/d77/namespacemachine__learning.html#a5305cc18d11943d3dc0d66e70d7e9c44">machine_learning::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; std::valarray&lt; T &gt;&gt; &amp;A)</div><div class="ttdef"><b>Definition:</b> vector_ops.hpp:232</div></div>
 <div class="ttc" id="asuccessive__approximation_8cpp_html_a79c1d08919ff7780a5d7723172602389"><div class="ttname"><a href="../../df/dc8/successive__approximation_8cpp.html#a79c1d08919ff7780a5d7723172602389">eq</a></div><div class="ttdeci">static float eq(float y)</div><div class="ttdef"><b>Definition:</b> successive_approximation.cpp:12</div></div>
 <div class="ttc" id="asuccessive__approximation_8cpp_html_ae89c36add7c55298c5195d0a83de1456"><div class="ttname"><a href="../../df/dc8/successive__approximation_8cpp.html#ae89c36add7c55298c5195d0a83de1456">eqd</a></div><div class="ttdeci">static float eqd(float y)</div><div class="ttdef"><b>Definition:</b> successive_approximation.cpp:17</div></div>

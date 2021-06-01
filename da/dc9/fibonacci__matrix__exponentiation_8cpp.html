@@ -162,7 +162,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>(2,0);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; transition(2,<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2,0));</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; Identity(2,<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2,0));</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    n--;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>--;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[0]=1, <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[1]=1;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Identity[0][0]=1; Identity[0][1]=0;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Identity[1][0]=0; Identity[1][1]=1;</div>
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                Identity[i][j]=res[i][j];</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            n--;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>--;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; res1(2, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(2,0));</div>
@@ -213,11 +213,12 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    transition[i][j]=res1[i][j];</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            } </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            n=n/2;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>=<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>/2;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> ((result[0]%mod*Identity[0][0]%mod)%mod+(<a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>[1]%mod*Identity[1][0]%mod)%mod)%mod;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; uint64_t &gt;</a></div></div>
 </div><!-- fragment -->
@@ -243,8 +244,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="../../da/dc9/fibonacci__matrix__exponentiation_8cpp.html#ae1a3968e7947464bee7714f6d43b7002">test</a>();</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    uint64_t mod=1000000007;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Enter the value of N: &quot;</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    uint64_t n=0; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>&gt;&gt;n; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;n&lt;&lt;<span class="stringliteral">&quot;th Fibonacci number in modulo &quot;</span> &lt;&lt; mod &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>&lt;&lt; <a class="code" href="../../da/dc9/fibonacci__matrix__exponentiation_8cpp.html#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>( n , mod) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    uint64_t <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>=0; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a>&gt;&gt;<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>&lt;&lt;<span class="stringliteral">&quot;th Fibonacci number in modulo &quot;</span> &lt;&lt; mod &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>&lt;&lt; <a class="code" href="../../da/dc9/fibonacci__matrix__exponentiation_8cpp.html#abc3bc08249058d57cfc8f54a29d9cf9f">fibo</a>( n , mod) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>

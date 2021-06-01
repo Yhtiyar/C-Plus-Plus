@@ -134,7 +134,7 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">Disjoint Sets Data Structure (Disjoint Sets)</a> </p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/leoyang429">leoyang429</a></dd></dl>
-<p>A disjoint set data structure (also called union find or merge find set) is a data structure that tracks a set of elements partitioned into a number of disjoint (non-overlapping) subsets. Some situations where disjoint sets can be used are- to find connected components of a graph, kruskal's algorithm for finding Minimum Spanning Tree etc. There are two operation which we perform on disjoint sets - 1) Union 2) Find </p>
+<p>A disjoint set data structure (also called union find or merge find set) is a data structure that tracks a set of elements partitioned into a number of disjoint (non-overlapping) subsets. Some situations where disjoint sets can be used are- to find connected components of a graph, kruskal's algorithm for finding <a class="el" href="../../d4/d12/namespace_minimum.html" title="Implementation of Minimum Edit Distance algorithm.">Minimum</a> Spanning Tree etc. There are two operation which we perform on disjoint sets - 1) Union 2) Find </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a010965fc5f16cca5a62506afab24e4ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a010965fc5f16cca5a62506afab24e4ec">&#9670;&nbsp;</a></span>CreateSet()</h2>
@@ -160,10 +160,11 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                      {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    root = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;int&gt;</a>(n + 1);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    rank = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector&lt;int&gt;</a>(n + 1, 1);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= n; ++i) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>; ++i) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        root[i] = i;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -260,7 +261,7 @@ Here is the call graph for this function:</div>
 <p>Main function </p>
 <div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;           {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// tests CreateSet &amp; Find</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">int</span> n = 100;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = 100;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="../../de/d23/disjoint__set_8cpp.html#a010965fc5f16cca5a62506afab24e4ec">CreateSet</a>(n);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= 100; ++i) {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (root[i] != i) {</div>

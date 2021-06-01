@@ -126,7 +126,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation to check whether a number is a power of 2 or not. </p>
 <p>This algorithm uses bit manipulation to check if a number is a power of 2 or not.</p>
-<h3><a class="anchor" id="autotoc_md66"></a>
+<h3><a class="anchor" id="autotoc_md68"></a>
 Algorithm</h3>
 <p>Let the input number be n, then the bitwise and between n and n-1 will let us know whether the number is power of 2 or not</p>
 <p>For Example, If N= 32 then N-1 is 31, if we perform bitwise and of these two numbers then the result will be zero, which indicates that it is the power of 2 If N=23 then N-1 is 22, if we perform bitwise and of these two numbers then the result will not be zero , which indicates that it is not the power of 2 </p><dl class="section note"><dt>Note</dt><dd>This implementation is better than naive recursive or iterative approach.</dd></dl>
@@ -158,16 +158,17 @@ Algorithm</h3>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;           {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> n = 0;<span class="comment"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = 0;<span class="comment"></span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">    /// n stores the input from the user</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;enter a number &quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n;<span class="comment"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>;<span class="comment"></span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">    /// function call with @param n</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185">math::power_of_two</a>(n);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="anamespacemath_html_a89ab7d6c3e3ee72a8cbaa85127986185"><div class="ttname"><a href="../../dd/d47/namespacemath.html#a89ab7d6c3e3ee72a8cbaa85127986185">math::power_of_two</a></div><div class="ttdeci">void power_of_two(int n)</div><div class="ttdoc">Function to test above algorithm.</div><div class="ttdef"><b>Definition:</b> power_of_two.cpp:36</div></div>
 </div><!-- fragment --><div class="dynheader">

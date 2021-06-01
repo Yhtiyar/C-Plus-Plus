@@ -235,7 +235,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;           {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/srand.html">std::srand</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/chrono/c/time.html">std::time</a>(<span class="keyword">nullptr</span>));  <span class="comment">// initialize randomizer</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">double</span> z = NAN, c = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, m = NAN, n = NAN;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">double</span> z = NAN, c = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, m = NAN, <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = NAN;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nInitial approximation: &quot;</span> &lt;&lt; c;</div>
@@ -243,9 +243,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// start iterations</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a5c5ff05b9f37ae59dad67e1d4f6cd51d">MAX_ITERATIONS</a>; i++) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        m = <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a>(c);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        n = <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386">eq_der</a>(c);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386">eq_der</a>(c);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        z = c - (m / n);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        z = c - (m / <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        c = z;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> (std::abs(m) &lt; <a class="code" href="../../de/dd3/newton__raphson__method_8cpp.html#a75f355966e0a97665eaf5a4c79baa7af">EPSILON</a>) {  <span class="comment">// stoping criteria</span></div>
@@ -257,6 +257,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
 <div class="ttc" id="anewton__raphson__method_8cpp_html_a2003b5b2dcfff0769b957ab5c968b03d"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d">eq</a></div><div class="ttdeci">static double eq(double i)</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:29</div></div>
 <div class="ttc" id="anewton__raphson__method_8cpp_html_a3d3f7f41977394680af6ebbed96f3386"><div class="ttname"><a href="../../de/dd3/newton__raphson__method_8cpp.html#a3d3f7f41977394680af6ebbed96f3386">eq_der</a></div><div class="ttdeci">static double eq_der(double i)</div><div class="ttdef"><b>Definition:</b> newton_raphson_method.cpp:39</div></div>

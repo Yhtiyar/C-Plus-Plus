@@ -161,14 +161,14 @@ $(document).ready(function(){initNavTree('dc/dc4/_2_users_2runner_2work_2_c-_plu
 <div class="line">    <span class="comment">// k1, k2, k3, k4 are the Runge Kutta variables</span></div>
 <div class="line">    <span class="comment">// used for calculation of y at each iteration</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> n = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>((x - init_x) / <a class="code" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>);</div>
+<div class="line">    <span class="keyword">auto</span> <a name="a3"></a><a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>((x - init_x) / <a class="code" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a>);</div>
 <div class="line">    <span class="comment">// used a vector container for the variables</span></div>
-<div class="line">    <a name="_a3"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> k(4, 0.0);</div>
+<div class="line">    <a name="_a4"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;double&gt;</a> k(4, 0.0);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Iterate for number of iterations</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">double</span> y = init_y;</div>
-<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= n; ++i) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>; ++i) {</div>
 <div class="line">        <span class="comment">// Apply Runge Kutta Formulas</span></div>
 <div class="line">        <span class="comment">// to find next value of y</span></div>
 <div class="line">        k[0] = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a> * <a class="code" href="../../d1/da6/rungekutta_8cpp.html#a450497475f5607333f9aca8f88901579">change</a>(init_x, y);</div>
@@ -194,8 +194,8 @@ $(document).ready(function(){initNavTree('dc/dc4/_2_users_2runner_2work_2_c-_plu
 <div class="line"><span class="comment"> * @brief Tests to check algorithm implementation.</span></div>
 <div class="line"><span class="comment"> * @returns void</span></div>
 <div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a name="a4"></a><a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
-<div class="line">    <a name="_a5"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The Runge Kutta function will be tested on the basis of &quot;</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a name="a5"></a><a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>() {</div>
+<div class="line">    <a name="_a6"></a><a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;The Runge Kutta function will be tested on the basis of &quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;precomputed values\n&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Test 1....&quot;</span></div>
@@ -224,11 +224,12 @@ $(document).ready(function(){initNavTree('dc/dc4/_2_users_2runner_2work_2_c-_plu
 <div class="line"><span class="comment"> * @brief Main function</span></div>
 <div class="line"><span class="comment"> * @returns 0 on exit</span></div>
 <div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="keywordtype">int</span> <a name="a6"></a><a class="code" href="../../d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a7"></a><a class="code" href="../../d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
 <div class="line">    <a class="code" href="../../dc/d5a/rat__maze_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a>();  <span class="comment">// Execute the tests</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="agraph__coloring_8cpp_html_gae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="../../d3/d40/graph__coloring_8cpp.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> graph_coloring.cpp:96</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a566eaf0ffafd50bc61e644561fd27001"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a566eaf0ffafd50bc61e644561fd27001">h</a></div><div class="ttdeci">int h(int key)</div><div class="ttdef"><b>Definition:</b> hash_search.cpp:45</div></div>
 <div class="ttc" id="anamespacenumerical__methods_html"><div class="ttname"><a href="../../d1/de0/namespacenumerical__methods.html">numerical_methods</a></div><div class="ttdoc">for io operations</div></div>

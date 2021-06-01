@@ -157,12 +157,12 @@ Algorithm</h3>
 <dl class="section return"><dt>Returns</dt><dd>0 on exit </dd></dl>
 <div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;           {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> N = 5;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, N&gt;</a> n{};  <span class="comment">// declaring array</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/array.html">std::array&lt;int, N&gt;</a> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>{};  <span class="comment">// declaring array</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                             <span class="comment">// taking values of elements from user</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n.size(); i++) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>.size(); i++) {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Enter value of n[&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]&quot;</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; n[i];</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a> &gt;&gt; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>[i];</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> max_sum = dynamic_programming::kadane::maxSubArray&lt;N&gt;(</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        n);  <span class="comment">// calling maxSubArray function</span></div>
@@ -173,6 +173,7 @@ Algorithm</h3>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
 <div class="ttc" id="abasic_istream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html">std::cin</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -213,7 +214,7 @@ template&lt;size_t N&gt; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        0;  <span class="comment">// declaring a variable named as curr_sum and initialized it to 0</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> max_sum = INT_MIN;  <span class="comment">// Initialized max_sum to INT_MIN</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i : n) {  <span class="comment">// for loop to iterate over the elements of the array</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        curr_sum += n[i];</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        curr_sum += <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>[i];</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        max_sum = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(max_sum, curr_sum);  <span class="comment">// getting the maximum value</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        curr_sum = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(curr_sum, 0);  <span class="comment">// updating the value of curr_sum</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>

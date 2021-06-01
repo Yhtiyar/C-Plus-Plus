@@ -212,13 +212,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// (*adj)[v - 1].push_back(std::make_pair(u - 1, w));</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="ttc" id="amake_pair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair/make_pair.html">std::make_pair</a></div><div class="ttdeci">T make_pair(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d07/bidirectional__dijkstra_8cpp_a6f92fe022b7e5d453f7257d763b6f3e2_cgraph.svg" width="298" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa3848a7213562b47084585499d3642a5"></a>
@@ -294,7 +288,7 @@ Here is the call graph for this function:</div>
 <p>check if currentNode has already been visited</p>
 <div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                       {<span class="comment"></span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">    /// n denotes the number of vertices in graph</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"></span>    uint64_t n = adj1-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"></span>    uint64_t <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = adj1-&gt;<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/size.html">size</a>();</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">    /// setting all the distances initially to INF</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span>    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;uint64_t&gt;</a>&gt; dist(2, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;uint64_t&gt;</a>(n, <a class="code" href="../../d7/d07/bidirectional__dijkstra_8cpp.html#a330a2b0a904f01802ada1f8f3b28e76c">INF</a>));</div>
@@ -397,8 +391,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
 <div class="ttc" id="abidirectional__dijkstra_8cpp_html_a330a2b0a904f01802ada1f8f3b28e76c"><div class="ttname"><a href="../../d7/d07/bidirectional__dijkstra_8cpp.html#a330a2b0a904f01802ada1f8f3b28e76c">INF</a></div><div class="ttdeci">constexpr int64_t INF</div><div class="ttdoc">for store the graph, the distances, and the path</div><div class="ttdef"><b>Definition:</b> bidirectional_dijkstra.cpp:23</div></div>
 <div class="ttc" id="abidirectional__dijkstra_8cpp_html_ab322409d0015c023d91c67b5b2679257"><div class="ttname"><a href="../../d7/d07/bidirectional__dijkstra_8cpp.html#ab322409d0015c023d91c67b5b2679257">graph::bidirectional_dijkstra::Shortest_Path_Distance</a></div><div class="ttdeci">uint64_t Shortest_Path_Distance(const std::vector&lt; uint64_t &gt; &amp;workset_, const std::vector&lt; std::vector&lt; uint64_t &gt;&gt; &amp;distance_)</div><div class="ttdoc">This function returns the shortest distance from the source to the target if there is path between ve...</div><div class="ttdef"><b>Definition:</b> bidirectional_dijkstra.cpp:61</div></div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="agreater_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/functional/greater.html">std::greater</a></div></div>
-<div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a></div></div>
+<div class="ttc" id="apair_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair&lt; int, int &gt;</a></div></div>
 <div class="ttc" id="apriority_queue_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/priority_queue.html">std::priority_queue</a></div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/size.html">std::vector::size</a></div><div class="ttdeci">T size(T... args)</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
@@ -484,7 +479,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d07/bidirectional__dijkstra_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="280" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d07/bidirectional__dijkstra_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="280" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

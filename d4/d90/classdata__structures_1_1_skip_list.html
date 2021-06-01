@@ -353,11 +353,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <a class="code" href="../../d4/d90/classdata__structures_1_1_skip_list.html#a3e249c2c35a8b7f5ffd2d77fee60d650">level</a> = rlevel;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> n =</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;Node&gt;</a> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> =</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                std::make_shared&lt;Node&gt;(key, rlevel, value);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= rlevel; i++) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                n-&gt;forward[i] = update[i]-&gt;forward[i];</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                update[i]-&gt;forward[i] = n;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>-&gt;forward[i] = update[i]-&gt;forward[i];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                update[i]-&gt;forward[i] = <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Inserted&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
@@ -365,6 +365,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Exists&quot;</span> &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="aclassdata__structures_1_1_skip_list_html_aa3f3813e9896792fc86b296547689ba4"><div class="ttname"><a href="../../d4/d90/classdata__structures_1_1_skip_list.html#aa3f3813e9896792fc86b296547689ba4">data_structures::SkipList::randomLevel</a></div><div class="ttdeci">int randomLevel()</div><div class="ttdef"><b>Definition:</b> skip_list.cpp:75</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

@@ -610,7 +610,7 @@ Here is the call graph for this function:</div>
 <p>operator overload to add </p>
 <div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                             {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">// if adding with another large_number</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../db/d82/classlarge__number.html">large_number</a> *b = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../db/d82/classlarge__number.html">large_number</a> *<span class="keyword">&gt;</span>(&amp;n);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../db/d82/classlarge__number.html">large_number</a> *b = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../db/d82/classlarge__number.html">large_number</a> *<span class="keyword">&gt;</span>(&amp;<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> max_L = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a>(this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>(), b-&gt;<a class="code" href="../../db/d82/classlarge__number.html#ac09a05ec4aafb4d9e0b4440d6f0e2a93">num_digits</a>());</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> carry = 0;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordtype">size_t</span> i;</div>
@@ -627,6 +627,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        }</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="amax_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/max.html">std::max</a></div><div class="ttdeci">T max(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -692,7 +693,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>operator over load to access the i^th digit conveniently and also assign value to it </p>
-<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#af2b3ec9c35842d3a46ac7326f268af57">_digits</a>[n]; }</div>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../db/d82/classlarge__number.html#af2b3ec9c35842d3a46ac7326f268af57">_digits</a>[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>]; }</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -290,7 +290,7 @@ approximations" style="pointer-events: none;" width="400" class="inline"/> </p>
 <div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                                    {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> tol_condition = 1;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    uint32_t iter = 0;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> n;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a> log_file;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (write_log) {</div>
@@ -304,11 +304,11 @@ approximations" style="pointer-events: none;" width="400" class="inline"/> </p>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        log_file &lt;&lt; <span class="stringliteral">&quot;iter#,&quot;</span>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">for</span> (n = 0; n &lt; roots-&gt;size(); n++) log_file &lt;&lt; <span class="stringliteral">&quot;root_&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">for</span> (n = 0; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> &lt; roots-&gt;size(); <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>++) log_file &lt;&lt; <span class="stringliteral">&quot;root_&quot;</span> &lt;&lt; n &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        log_file &lt;&lt; <span class="stringliteral">&quot;avg. correction&quot;</span>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        log_file &lt;&lt; <span class="stringliteral">&quot;\n0,&quot;</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">for</span> (n = 0; n &lt; roots-&gt;size(); n++)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">for</span> (n = 0; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> &lt; roots-&gt;size(); <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>++)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            log_file &lt;&lt; <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#a3bada3e58ad8d1b00918db2ffe83a740">complex_str</a>((*roots)[n]) &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
@@ -325,7 +325,7 @@ approximations" style="pointer-events: none;" width="400" class="inline"/> </p>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#pragma omp parallel for shared(break_loop, tol_condition)</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">for</span> (n = 0; n &lt; roots-&gt;size(); n++) {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">for</span> (n = 0; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> &lt; roots-&gt;size(); <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>++) {</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordflow">if</span> (break_loop)</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
@@ -334,7 +334,7 @@ approximations" style="pointer-events: none;" width="400" class="inline"/> </p>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            denominator = 1.0;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; roots-&gt;size(); i++)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <span class="keywordflow">if</span> (i != n)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    denominator *= (*roots)[n] - (*roots)[i];</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    denominator *= (*roots)[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] - (*roots)[i];</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;long double&gt;</a> delta = numerator / denominator;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
@@ -345,7 +345,7 @@ approximations" style="pointer-events: none;" width="400" class="inline"/> </p>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                break_loop = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            (*roots)[n] -= delta;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            (*roots)[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] -= delta;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#pragma omp critical</span></div>
@@ -358,14 +358,14 @@ approximations" style="pointer-events: none;" width="400" class="inline"/> </p>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span> (log_file.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ofstream/is_open.html">is_open</a>()) {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">for</span> (n = 0; n &lt; roots-&gt;size(); n++)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">for</span> (n = 0; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> &lt; roots-&gt;size(); <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>++)</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                log_file &lt;&lt; <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#a3bada3e58ad8d1b00918db2ffe83a740">complex_str</a>((*roots)[n]) &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#if defined(DEBUG) || !defined(NDEBUG)</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">if</span> (iter % 500 == 0) {</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Iter: &quot;</span> &lt;&lt; iter &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">for</span> (n = 0; n &lt; roots-&gt;size(); n++)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">for</span> (n = 0; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> &lt; roots-&gt;size(); <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>++)</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#a3bada3e58ad8d1b00918db2ffe83a740">complex_str</a>((*roots)[n]);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\t\tabsolute average change: &quot;</span> &lt;&lt; tol_condition</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
@@ -380,6 +380,7 @@ approximations" style="pointer-events: none;" width="400" class="inline"/> </p>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
 <div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cerr</a></div></div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
 <div class="ttc" id="acomplex_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex</a></div></div>
 <div class="ttc" id="adurand__kerner__roots_8cpp_html_a024b8bc4755863315456d573a6732377"><div class="ttname"><a href="../../da/df2/durand__kerner__roots_8cpp.html#a024b8bc4755863315456d573a6732377">check_termination</a></div><div class="ttdeci">bool check_termination(long double delta)</div><div class="ttdef"><b>Definition:</b> durand_kerner_roots.cpp:91</div></div>
 <div class="ttc" id="adurand__kerner__roots_8cpp_html_a3bada3e58ad8d1b00918db2ffe83a740"><div class="ttname"><a href="../../da/df2/durand__kerner__roots_8cpp.html#a3bada3e58ad8d1b00918db2ffe83a740">complex_str</a></div><div class="ttdeci">const char * complex_str(const std::complex&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition:</b> durand_kerner_roots.cpp:76</div></div>
@@ -436,14 +437,14 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>\(f(x)\) </dd></dl>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                         {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">double</span> real = 0.f, imag = 0.f;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> n;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// #ifdef _OPENMP</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// #pragma omp target teams distribute reduction(+ : real, imag)</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// #endif</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span> (n = 0; n &lt; coeffs.size(); n++) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span> (n = 0; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> &lt; coeffs.size(); <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>++) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a> tmp =</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            coeffs[n] * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(x, coeffs.size() - n - 1);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            coeffs[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] * <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/math/pow.html">std::pow</a>(x, coeffs.size() - n - 1);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        real += tmp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/real.html">real</a>();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        imag += tmp.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex/imag.html">imag</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
@@ -484,10 +485,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    };</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">/* initialize root approximations with random values */</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; roots.size(); n++) {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        roots[n] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        roots[n] -= 50.f;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        roots[n] /= 25.f;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> &lt; roots.size(); <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>++) {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        roots[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        roots[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] -= 50.f;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        roots[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] /= 25.f;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">auto</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#ac38b9cfd2a39d856e0feba3b5d241ded">durand_kerner_algo</a>(coeffs, &amp;roots, <span class="keyword">false</span>);</div>
@@ -543,10 +544,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    };</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">/* initialize root approximations with random values */</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; n &lt; roots.size(); n++) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        roots[n] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        roots[n] -= 50.f;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        roots[n] /= 25.f;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = 0; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> &lt; roots.size(); <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>++) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        roots[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/complex.html">std::complex&lt;double&gt;</a>(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/numeric/random/rand.html">std::rand</a>() % 100);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        roots[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] -= 50.f;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        roots[<a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>] /= 25.f;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">auto</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <a class="code" href="../../da/df2/durand__kerner__roots_8cpp.html#ac38b9cfd2a39d856e0feba3b5d241ded">durand_kerner_algo</a>(coeffs, &amp;roots, <span class="keyword">false</span>);</div>
