@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('dc/d0f/namespacebitmask.html','../../'
 </div><!--header-->
 <div class="contents">
 
-<p>Bitmask examples.  
+<p>for IO operations  
 <a href="../../dc/d0f/namespacebitmask.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -110,7 +110,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9768a9b74d49bdc3dd6c14c298abd524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Bitmask examples. </p>
+<div class="textblock"><p>for IO operations </p>
+<p>Bitmask examples </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a9768a9b74d49bdc3dd6c14c298abd524"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9768a9b74d49bdc3dd6c14c298abd524">&#9670;&nbsp;</a></span>example_advanced()</h2>
@@ -127,26 +128,26 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This function demonstrates advanced techniques of using bitmask. </p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = 3;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> mask = (1 &lt;&lt; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>) -1;   <span class="comment">// 111</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> s = 3;                <span class="comment">// 011</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// If Y is subset of X, then X ^ Y will give X without Y (diffirence);</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    s = mask ^ s;             <span class="comment">//100</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(s, n);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// We can also run through all subsets of the mask by:</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> subset = mask; subset &gt; 0; subset = mask &amp; (subset - 1)) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(subset, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = 3;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> mask = (1 &lt;&lt; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>) -1;   <span class="comment">// 111</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> s = 3;                <span class="comment">// 011</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// If Y is subset of X, then X ^ Y will give X without Y (diffirence);</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    s = mask ^ s;             <span class="comment">//100</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt;<a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(s, n);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// We can also run through all subsets of the mask by:</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> subset = mask; subset &gt; 0; subset = mask &amp; (subset - 1)) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(subset, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;     </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
-<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:103</div></div>
+<div class="ttc" id="abitmask_8cpp_html_ab027eaccd8ef0f0f33af0b5c54c9b41e"><div class="ttname"><a href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">bitmask::problem_example::n</a></div><div class="ttdeci">const int n</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:105</div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="anamespacebitmask_html_a65b8f24a56492f5e6eeb4f91351e1b40"><div class="ttname"><a href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">bitmask::to_string</a></div><div class="ttdeci">std::string to_string(int mask, int n)</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:78</div></div>
+<div class="ttc" id="anamespacebitmask_html_a65b8f24a56492f5e6eeb4f91351e1b40"><div class="ttname"><a href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">bitmask::to_string</a></div><div class="ttdeci">std::string to_string(int mask, int n)</div><div class="ttdef"><b>Definition:</b> bitmask.cpp:80</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -171,31 +172,31 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>This function demonstrates basics of bitmask. </p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Lets assume we have set of n = 5 elements</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = 5;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> e = 0;               <span class="comment">// Mask that represents empty set. binary : 00000</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> f = (1 &lt;&lt; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>) - 1;    <span class="comment">// Mask that represents full set.  binary : 11111</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(f, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                     {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Lets assume we have set of n = 5 elements</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a> = 5;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> e = 0;               <span class="comment">// Mask that represents empty set. binary : 00000</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> f = (1 &lt;&lt; <a class="code" href="../../da/d4c/bitmask_8cpp.html#ab027eaccd8ef0f0f33af0b5c54c9b41e">n</a>) - 1;    <span class="comment">// Mask that represents full set.  binary : 11111</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    e ^= (1 &lt;&lt; 2);          <span class="comment">//Flipping 2nd bit of e. 00000 ^ 00100 = 00100</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    e ^= (1 &lt;&lt; 1);          <span class="comment">//Flipping 1st bit of e. 00100 ^ 00010 = 00110</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> t = e &amp; (1 &lt;&lt; 2);   <span class="comment">//With &amp; we can check if the n&#39;th bit is 1. If t != 0 then 1, othervise 1; 00110 &amp; 00100 =00100 </span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    e ^= (1 &lt;&lt; 2);          <span class="comment">//Flipping 2nd bit of e. 00110 ^ 00100 = 00010      </span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    f &amp;= (f ^ (1 &lt;&lt; 3));    <span class="comment">//Setting bit to zero.  Will always set n&#39;th bit to 0 despite of current mask </span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                            <span class="comment">// f = 10111    </span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    f |= (1 &lt;&lt; 1);          <span class="comment">//Setting bit to one. Will always set n&#39;th bit to 1 despite of current mask</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                            <span class="comment">// f = 10111</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    t = f &amp; e;              <span class="comment">// Intersection of 2 sets 10111 &amp; 00010 = 00010</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(t, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    t = f | e;              <span class="comment">// Union of 2 sets 10111 | 00010 = 10111 </span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(f, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    e ^= (1 &lt;&lt; 2);          <span class="comment">//Flipping 2nd bit of e. 00000 ^ 00100 = 00100</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    e ^= (1 &lt;&lt; 1);          <span class="comment">//Flipping 1st bit of e. 00100 ^ 00010 = 00110</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> t = e &amp; (1 &lt;&lt; 2);   <span class="comment">//With &amp; we can check if the n&#39;th bit is 1. If t != 0 then 1, othervise 1; 00110 &amp; 00100 =00100 </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    e ^= (1 &lt;&lt; 2);          <span class="comment">//Flipping 2nd bit of e. 00110 ^ 00100 = 00010      </span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    f &amp;= (f ^ (1 &lt;&lt; 3));    <span class="comment">//Setting bit to zero.  Will always set n&#39;th bit to 0 despite of current mask </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                            <span class="comment">// f = 10111    </span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    f |= (1 &lt;&lt; 1);          <span class="comment">//Setting bit to one. Will always set n&#39;th bit to 1 despite of current mask</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                            <span class="comment">// f = 10111</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    t = f &amp; e;              <span class="comment">// Intersection of 2 sets 10111 &amp; 00010 = 00010</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(t, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    t = f ^ e;              <span class="comment">// Difference of 2 sets 10111 ^ 00010 = 10101</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    t = f | e;              <span class="comment">// Union of 2 sets 10111 | 00010 = 10111 </span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(t, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    t = f ^ e;              <span class="comment">// Difference of 2 sets 10111 ^ 00010 = 10101</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <a class="code" href="../../dc/d0f/namespacebitmask.html#a65b8f24a56492f5e6eeb4f91351e1b40">to_string</a>(t, n) &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -239,12 +240,12 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>returns the bit representation of mask(number) in given length as string.</dd></dl>
 <p>Definition of declared function </p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                     {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = n - 1; i &gt;= 0; i--)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        result += ((mask &amp; (1 &lt;&lt;i)) ? <span class="stringliteral">&quot;1&quot;</span> : <span class="stringliteral">&quot;0&quot;</span>);   <span class="comment">// Checking if i&#39;th bit is 1 or 0</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                     {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = n - 1; i &gt;= 0; i--)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        result += ((mask &amp; (1 &lt;&lt;i)) ? <span class="stringliteral">&quot;1&quot;</span> : <span class="stringliteral">&quot;0&quot;</span>);   <span class="comment">// Checking if i&#39;th bit is 1 or 0</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
 </div><!-- fragment -->
